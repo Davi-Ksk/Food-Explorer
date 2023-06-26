@@ -4,7 +4,7 @@ import { Searchbar } from '../Searchbar'
 import { SidebarItem } from '../SidebarItem'
 
 import { Container, Content } from './styles'
-import { PiXBold, PiSignInBold } from 'react-icons/pi'
+import { PiXBold, PiSignOutBold } from 'react-icons/pi'
 
 
 const Sidebar = ({ active }) => {
@@ -23,7 +23,7 @@ const Sidebar = ({ active }) => {
 
       <Content>
         <Searchbar />
-        <SidebarItem Icon={PiSignInBold} Text="Sair" />
+        <SidebarItem Icon={PiSignOutBold} Text="Sair" />
       </Content>
       
     </Container>

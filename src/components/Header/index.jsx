@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import { Container, Logo, OrderCount } from "./styles";
-import logo from '../../assets/logo.svg';
+
 import Sidebar from '../Sidebar';
-import { PiListBold, PiReceiptBold } from "react-icons/pi";
+import { Searchbar } from '../Searchbar';
+
+import { PiListBold, PiReceiptBold, PiSignOutBold } from "react-icons/pi";
+import { Container, Logo, OrdersMobile, OrdersDesktop } from "./styles";
+import logo from '../../assets/logo.svg';
 
 export function Header() {
 
@@ -10,10 +13,12 @@ export function Header() {
 
   const showSiderbar = () => setSidebar(!sidebar)
 
+  const orders = "+9";
+
   return (
     <Container>
 
-      <PiListBold onClick={showSiderbar}/>
+      <PiListBold onClick={showSiderbar} className="menu-icon"/>
       {sidebar && <Sidebar active={setSidebar} />}
 
       <Logo>
@@ -21,15 +26,25 @@ export function Header() {
         <h1>food explorer</h1>
       </Logo>
 
+      <div className="search">
+        <Searchbar />
+      </div>
 
-      <OrderCount>
-        <button>
-          <div>
-            <a>+9</a>
+      <OrdersMobile>
+          <div className='count'>
+            <a>{orders}</a>
           </div>
           <PiReceiptBold />
-        </button>
-      </OrderCount>
+      </OrdersMobile>
+
+      <OrdersDesktop>
+        <PiReceiptBold />
+        <p>Pedidos ({orders})</p>
+      </OrdersDesktop>
+
+      <div className='sign-out'>
+        <PiSignOutBold />
+      </div>
     </Container>
   )
 }

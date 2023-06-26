@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     COLORS: {
       LIGHT_100: "#FFFFFF",
       LIGHT_200: "#FFFAF1",
@@ -32,3 +32,8 @@ export default {
 
     }
   }
+module.exports = {
+  SCREEN: {
+    BREAKPOINT: "768px",
+  }
+}

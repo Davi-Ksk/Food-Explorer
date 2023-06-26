@@ -50,9 +50,15 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-height: 100%;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
 
-padding: 3.6rem 2.8rem;
-background-color: ${({ theme }) => theme.COLORS.DARK_400};
+  height: 100%;
+  width: 100%;
+
+  
+
+  padding: 3.6rem 2.8rem;
+  background-color: ${({ theme }) => theme.COLORS.DARK_400};
 `;

@@ -9,6 +9,7 @@ export default createGlobalStyle`
 
     :root {
         font-size: 62.5%;
+        --screen-breakpoint: 768px;
     }
 
     body, input, button, textarea {
