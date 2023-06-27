@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 
 // import { AuthProvider } from './hooks/auth';
 
-import theme from './Styles/theme'
+import theme from './styles/theme'
 
 import { Routes } from './routes'
 

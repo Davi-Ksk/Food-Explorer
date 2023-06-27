@@ -1,42 +1,34 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
     display: flex;
     align-items: center;
 
-    background-color: ${({ theme }) => theme.COLORS.DARK_900 };
-    color: ${({ theme }) => theme.COLORS.LIGHT_500 };
-
-    margin-bottom: 3.2rem;
-    border-radius: 8px;
-
-    > input {
-        height: 4.8rem;
+    input {
         width: 100%;
-
+        height: 4.8rem;
+        
         padding: 1.6rem 1.4rem;
         
-        font-size: 1.6rem;
+        background-color: ${({ theme }) => theme.COLORS.DARK_800};
+        border-radius: 0.5rem;
+        border: none;
+
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
-        background: transparent;
-        border: 0;
+
 
         &:placeholder {
-            color: ${({ theme }) => theme.COLORS.LIGHT_500 };
+            color: ${({ theme }) => theme.COLORS.GRAY_200};
         }
+    }
 
-            &:focus {
-                border-line-color: ${({ theme }) => theme.COLORS.LIGHT_100 };
-                border-width: 2px;
-                border-style: solid;
-                border-radius: 8px;
-            }
-
+    input:focus {
+        border: 1px solid ${({ theme }) => theme.COLORS.LIGHT_200};
+        /* -webkit-box-shadow: 0px 0px 10px 5px #193746; 
+        box-shadow: 0px 0px 10px 5px #193746; */
     }
     
     > svg {
-        margin-left: 1.6rem;
+        margin-left: 1.4rem;
     }
-
-    `;
+`;

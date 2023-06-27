@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     COLORS: {
       LIGHT_100: "#FFFFFF",
       LIGHT_200: "#FFFAF1",
@@ -30,10 +30,9 @@ module.exports = {
       CAKE_100: "#065E7C",
       CAKE_200: "#82F3FF",
 
+      GRADIENT_200: "linear-gradient(180deg, rgb(9.24, 29.55, 38.25) 0%, rgb(0, 18.7, 28.05) 100%)",
+
+      BREAKPOINT: "768px"
+
     }
   }
-module.exports = {
-  SCREEN: {
-    BREAKPOINT: "768px",
-  }
-}
